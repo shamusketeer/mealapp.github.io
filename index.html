@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meal Web App</title>
+
+    <!-- Font-awesome Icon Kit -->
+    <!-- Importing font-awesome stylesheets and scripts -->    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/9ca3ef8694.js" crossorigin="anonymous"></script>
+
+    <!-- External Stylesheet -->
+    <!-- Linking an external CSS file -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div id="navbar">
+            <a href="index.html">
+                <!-- App Name -->
+                <div class="top-logo">
+                    <span>MEAL HUB</span>
+                </div>
+            </a>
+           
+            <!-- Side Drawer -->
+            <div class="side-drawer">
+                <div id="toggle-sidebar">
+                    <!-- Sidebar Toggle Button with Counter -->
+                    <i class="fa-solid fa-bars"></i>
+                    <span id="total-counter">0</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+
+    <!-- Main Container -->
+    <div id="main">
+
+        <!-- Sidebar -->
+        <div class="sidebar" id="sidebar">
+            <div class="top_gap"></div>
+            <div class="title small">
+                <!-- Sidebar Title -->
+                Favorite Meals
+            </div>
+
+            <!-- Placeholder for Favorite Meal items -->
+            <div id="fav">
+                <!-- <div class="fav-item">
+                    <div class="fav-item-photo">
+                        <img src="https://www.themealdb.com/images/ingredients/Lime.png" alt="">
+                    </div>
+                    <div class="fav-item-details">
+                        <div class="fav-item-name">
+                            <strong>Name:</strong>
+                            <span class="fav-item-text">
+                                Chicken
+                            </span>
+                        </div>
+                        <div id="fav-like-button">
+                            Add or Remove
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+        <div id="flex-box">
+
+            <div class="container">
+
+                <div class="header">
+                    <div class="title">
+                        <!-- Main Title -->
+                        Your Favorite Meal On Your Fingertips
+                    </div>
+                </div>
+
+                <div class="" id="search-bar">
+                    <div class="icon">
+                        <!-- Search Icon -->
+                        <i class="fa-solid fa-search "></i>
+                    </div>
+
+                    <div class="new-search-input">
+                        <form onkeyup="showMealList()">
+                            <!-- Search Input -->
+                            <input id="search-input" type="text" placeholder="Search Your Fav Meal..." />
+                        </form>
+                    </div>
+
+                    <a href="/">
+                        <!-- Button to Display Random Meals -->
+                        <button id="random" type="button" class="">
+                            <!-- Random Icon -->
+                            <i class="fa fa-random fa-xl"></i>
+                        </button>
+
+                        <div id="meal-info"></div>
+                    </a>
+
+
+                </div>
+            </div>
+
+
+            <!-- Item Details -->
+            <!-- Placeholder for displaying meal details -->
+            <!-- Commented out in the provided HTML code -->
+            <div id="cards-holder" class="">
+
+                <!-- Meal Cards -->
+                <!-- Placeholder for dynamically generated meal cards -->
+                <!-- <div class="card">
+                    <div class="card-top">
+                        <div class="dish-photo">
+                            <img src="${element.strMealThumb}" alt="">
+                        </div>
+                        <div class="dish-name">
+                            ${element.strMeal}
+                        </div>
+                        <div class="dish-details">
+                            ${truncate(element.strInstructions,50)}
+                            <a href="${element.strInstructions}">
+                                <span class="button">Read More</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-bottom">
+                        <div class="like">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div class="play">
+                            <a href="${element.strYoutube}">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Custom JavaScript file -->
+    <script src="script.js"></script>
+</body>
+
+</html>
